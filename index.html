@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Crop Disease Prediction & Management Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <h2>CropAI</h2>
+                </div>
+                <ul class="nav__menu">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+                    <li><a href="#diseases" class="nav__link">Diseases</a></li>
+                    <li><a href="#ai-analysis" class="nav__link">AI Analysis</a></li>
+                    <li><a href="#upload" class="nav__link">Upload</a></li>
+                    <li><a href="#management" class="nav__link">Management</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">AI-Driven Crop Disease Prediction & Management Systems</h1>
+                    <p class="hero__subtitle">Revolutionary technology to detect, predict, and manage crop diseases using advanced AI and machine learning algorithms</p>
+                    <a href="#upload" class="btn btn--primary btn--lg">Start Analysis</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🔬</div>
+                        <h3>AI-Powered Detection</h3>
+                        <p>Advanced computer vision and deep learning algorithms for accurate disease identification</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">📊</div>
+                        <h3>Instant Analysis</h3>
+                        <p>Real-time leaf texture and color analysis with immediate diagnostic reports</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🌱</div>
+                        <h3>Management Solutions</h3>
+                        <p>Comprehensive treatment recommendations and prevention strategies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-item">
+                        <div class="stat-item__number">95-99%</div>
+                        <div class="stat-item__label">Detection Accuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item__number">50+</div>
+                        <div class="stat-item__label">Disease Types</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item__number">20+</div>
+                        <div class="stat-item__label">Crop Varieties</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-item__number">24/7</div>
+                        <div class="stat-item__label">Real-time Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diseases Section -->
+        <section id="diseases" class="diseases">
+            <div class="container">
+                <h2 class="section-title">Crop Disease Database</h2>
+                <div class="disease-categories">
+                    <button class="category-btn active" data-category="all">All Diseases</button>
+                    <button class="category-btn" data-category="fungal">Fungal</button>
+                    <button class="category-btn" data-category="bacterial">Bacterial</button>
+                    <button class="category-btn" data-category="viral">Viral</button>
+                </div>
+                <div class="diseases__grid" id="diseases-grid">
+                    <!-- Disease cards will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Analysis Section -->
+        <section id="ai-analysis" class="ai-analysis">
+            <div class="container">
+                <h2 class="section-title">AI Detection Methods</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h3>Image Processing Workflow</h3>
+                        <div class="workflow">
+                            <div class="workflow-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Image Acquisition</h4>
+                                    <p>High-resolution leaf image capture</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Preprocessing</h4>
+                                    <p>Noise removal and image enhancement</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Segmentation</h4>
+                                    <p>Disease area isolation and boundary detection</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Feature Extraction</h4>
+                                    <p>Color, texture, and shape analysis</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Classification</h4>
+                                    <p>Machine learning model prediction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>Feature Analysis</h3>
+                        <ul class="feature-list">
+                            <li>Color histograms (RGB, HSV, Lab color spaces)</li>
+                            <li>Texture features (Local Binary Patterns, GLCM)</li>
+                            <li>Shape descriptors and geometric properties</li>
+                            <li>Statistical color moments</li>
+                            <li>Gradient and edge features</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-card">
+                        <h3>ML Models</h3>
+                        <div class="model-list">
+                            <div class="model-item">
+                                <h4>Convolutional Neural Networks (CNN)</h4>
+                                <div class="accuracy-bar">
+                                    <div class="accuracy-fill" style="width: 98%">98%</div>
+                                </div>
+                            </div>
+                            <div class="model-item">
+                                <h4>ResNet-50</h4>
+                                <div class="accuracy-bar">
+                                    <div class="accuracy-fill" style="width: 96%">96%</div>
+                                </div>
+                            </div>
+                            <div class="model-item">
+                                <h4>Support Vector Machines (SVM)</h4>
+                                <div class="accuracy-bar">
+                                    <div class="accuracy-fill" style="width: 94%">94%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="upload">
+            <div class="container">
+                <h2 class="section-title">Upload Leaf Image for Analysis</h2>
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-content">
+                        <div class="upload-icon">📷</div>
+                        <h3>Drag and drop your leaf image here</h3>
+                        <p>or click to browse files</p>
+                        <input type="file" id="file-input" accept="image/*" class="file-input">
+                        <button class="btn btn--secondary" onclick="document.getElementById('file-input').click()">Browse Files</button>
+                    </div>
+                    <div class="upload-preview hidden" id="upload-preview">
+                        <img id="preview-image" src="" alt="Preview">
+                        <div class="preview-actions">
+                            <button class="btn btn--primary" id="analyze-btn">Analyze Image</button>
+                            <button class="btn btn--outline" id="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="analysis-results hidden" id="analysis-results">
+                    <h3>Analysis Results</h3>
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h4 id="disease-name">Disease Detected</h4>
+                            <div class="confidence" id="confidence">Confidence: 0%</div>
+                        </div>
+                        <div class="result-details">
+                            <div class="detail-item">
+                                <strong>Pathogen:</strong> <span id="pathogen"></span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Symptoms:</strong> <span id="symptoms"></span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Recommended Action:</strong> <span id="action"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Management Section -->
+        <section id="management" class="management">
+            <div class="container">
+                <h2 class="section-title">Disease Management Strategies</h2>
+                <div class="management-grid">
+                    <div class="management-card">
+                        <h3>Cultural Control</h3>
+                        <ul class="management-list">
+                            <li>Crop rotation with non-host plants</li>
+                            <li>Use of resistant crop varieties</li>
+                            <li>Proper plant spacing for air circulation</li>
+                            <li>Field sanitation and debris removal</li>
+                            <li>Optimal planting time selection</li>
+                        </ul>
+                    </div>
+                    <div class="management-card">
+                        <h3>Biological Control</h3>
+                        <ul class="management-list">
+                            <li>Beneficial microorganisms application</li>
+                            <li>Natural predator conservation</li>
+                            <li>Biocontrol agent deployment</li>
+                            <li>Compost tea treatments</li>
+                            <li>Organic soil amendments</li>
+                        </ul>
+                    </div>
+                    <div class="management-card">
+                        <h3>Chemical Control</h3>
+                        <ul class="management-list">
+                            <li>Copper-based fungicides</li>
+                            <li>Systemic bactericides</li>
+                            <li>Preventive spray applications</li>
+                            <li>Targeted disease-specific treatments</li>
+                            <li>Resistance management protocols</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About the Project</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>This AI-driven crop disease prediction and management system represents a breakthrough in precision agriculture. By leveraging advanced computer vision, machine learning, and deep learning technologies, we provide farmers and agricultural professionals with powerful tools to detect, identify, and manage crop diseases before they cause significant damage.</p>
+                        <p>Our system analyzes leaf texture, color pigmentation, and surface abnormalities to provide accurate disease diagnosis with treatment recommendations, helping to improve crop yields and reduce economic losses.</p>
+                    </div>
+                    <div class="technology-stack">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Computer Vision</span>
+                            <span class="tech-item">Deep Learning</span>
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">OpenCV</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CropAI</h4>
+                    <p>Advanced AI solutions for sustainable agriculture</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#diseases">Diseases</a></li>
+                        <li><a href="#upload">Upload</a></li>
+                        <li><a href="#management">Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@cropai.com</p>
+                    <p>Phone: +91 12345 67890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CropAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
